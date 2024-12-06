@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ post.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog_app/css/styles.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>{{ post.title }}</h1>
+        <p class="post-date">Published on: {{ post.created_at|date:"F j, Y" }}</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="post-content">
+            <p>{{ post.content }}</p>
+        </div>
+
+        <!-- Post Highlights -->
+        <div class="post-highlights">
+            <h2>Why this post matters:</h2>
+            <ul>
+                <li>This blog is part of our Django learning series.</li>
+                <li>It covers essential tips and tricks for web development.</li>
+                <li>We aim to help beginners get started with Django.</li>
+            </ul>
+        </div>
+
+        <!-- Related Posts Section -->
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <p>Check out other articles in the series:</p>
+            <ul>
+                <li><a href="/">Introduction to Django Framework</a></li>
+                <li><a href="/">Django vs Flask: Which One Should You Choose?</a></li>
+                <li><a href="/">Styling Your Django Application</a></li>
+            </ul>
+        </div>
+
+        <!-- Back to Homepage -->
+        <a href="/" class="back-home">Back to Homepage</a>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span class="author">Suryaveer Singh</span> | Made with <span class="heart">❤️</span> using Django</p>
+    </footer>
+</body>
+</html>

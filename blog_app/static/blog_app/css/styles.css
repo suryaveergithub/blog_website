@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.post-card {
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h2 {
+    margin: 0 0 10px 0;
+    color: #004aad;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.post-content {
+    margin: 10px 0;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #004aad;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.back-home {
+    text-decoration: none;
+    color: white;
+    background-color: #004aad;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.back-home:hover {
+    background-color: #007bff;
+}
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center align the text */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+/* Style the author name */
+footer .author {
+    font-weight: bold;
+    color: #ffcd00; /* Golden-yellow color */
+}
+
+/* Style the heart */
+footer .heart {
+    color: #ff4d4d; /* Bright red color */
+    animation: beat 1s infinite; /* Add a heartbeat animation */
+}
+
+/* Heartbeat animation */
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Enlarged size */
+    }
+}
